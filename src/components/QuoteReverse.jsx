@@ -1,6 +1,6 @@
 import { Container } from '@/components/Container'
 
-export function QuoteReverse() {
+export function QuoteReverse({ quote, source }) {
   return (
     <section
       id="features"
@@ -11,9 +11,9 @@ export function QuoteReverse() {
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="text-3xl tracking-tight font-sans sm:text-4xl md:text-5xl">
           <span className='font-display text-9xl'>“</span>
-          Le diseguaglianze di genere hanno radici profonde, che riguardano il contesto familiare e della formazione, prima ancora di quello lavorativo. Molti studi mostrano che sono poche le donne iscritte alle materie STEM, nonostante ci siano più donne laureate che uomini.</h2>
+          {quote}</h2>
           <p><span className='font-display text-right text-9xl'>”</span></p>
-          <p className='mt-4 text-right'>Piano nazionale di ripresa e resilienza (2021)</p>
+          <p className='mt-4 text-right'>{source}</p>
         </div>
       </Container>
     </section>

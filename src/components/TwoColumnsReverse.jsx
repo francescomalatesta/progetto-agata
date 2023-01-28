@@ -1,6 +1,6 @@
 import { Container } from '@/components/Container'
 
-export function TwoColumnsReverse() {
+export function TwoColumnsReverse({ left, right }) {
   return (
     <section
       id="features"
@@ -11,20 +11,10 @@ export function TwoColumnsReverse() {
       <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <div className='grid grid-cols-1 md:grid-cols-2'>
             <div className="md:mr-4">
-              <h2 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl">
-                Sezione 2 Colonne - 1
-              </h2>
-              <p className="mt-6 text-lg tracking-tight">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor lectus, efficitur vitae augue a, scelerisque finibus nibh. Duis a fringilla nibh. Etiam sit amet placerat orci. Fusce ut tincidunt eros. Nulla vel quam vestibulum, rhoncus risus venenatis, cursus dolor. Pellentesque feugiat risus et arcu euismod dignissim. Proin at sapien ac diam porta cursus.
-              </p>
+              {left}
             </div>
             <div className="md:ml-4 mt-8 md:mt-0">
-              <h2 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl">
-                Sezione 2 Colonne - 2
-              </h2>
-              <p className="mt-6 text-lg tracking-tight">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor lectus, efficitur vitae augue a, scelerisque finibus nibh. Duis a fringilla nibh. Etiam sit amet placerat orci. Fusce ut tincidunt eros. Nulla vel quam vestibulum, rhoncus risus venenatis, cursus dolor. Pellentesque feugiat risus et arcu euismod dignissim. Proin at sapien ac diam porta cursus.
-              </p>
+              {right}
             </div>
           </div>
         </div>
