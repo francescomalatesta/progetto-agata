@@ -1,12 +1,12 @@
 import { ResponsivePie } from '@nivo/pie'
 
-const Pie = ({ data, isReverse = false }) => {
+const Pie = ({ data, stat, subtitle, isReverse = false }) => {
     const foreground = isReverse ? '#63576E' : '#63576E'
     const background = isReverse ? '#342741' : '#ECE8E2'
 
     return <div style={{ width: '100%', height: 500, position: 'relative' }}>
-        <div style={{ width: '100%', marginTop: '140px', fontSize: '74px', position: 'absolute', textAlign: 'center' }}>200</div>
-        <div style={{ width: '100%', marginTop: '240px', fontSize: '28px', position: 'absolute', textAlign: 'center' }}>su 1000 giovani</div>
+        <div style={{ width: '100%', marginTop: '140px', fontSize: '74px', position: 'absolute', textAlign: 'center' }}>{stat}</div>
+        <div style={{ width: '100%', marginTop: '240px', fontSize: '28px', position: 'absolute', textAlign: 'center' }}>{subtitle}</div>
         <ResponsivePie
             data={data}
             margin={{ top: 40, right: 80, bottom: 80, left: 80 }}

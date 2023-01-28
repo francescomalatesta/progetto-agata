@@ -20,8 +20,8 @@ export function Team() {
                         <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://magal.li/i/500/500" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
-                            <h3 className='font-display text-center'>Giancarlo Magalli</h3>
-                            <p className='text-center text-sm'>Regnante</p>
+                            <h3 className='font-display text-center'>Domiziana Ferrari</h3>
+                            <p className='text-center text-sm'>Specializzata in cyber security e data protection, lavora nella social data analysis e community management per un’agenzia internazionale. Collabora, inoltre, con Privacy Network, un’associazione italiana non-profit.</p>
                         </div>
                         </div>
                     </div>
@@ -31,8 +31,8 @@ export function Team() {
                         <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://magal.li/i/500/500" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
-                            <h3 className='font-display text-center'>Giancarlo Magalli</h3>
-                            <p className='text-center text-sm'>Regnante</p>
+                            <h3 className='font-display text-center'>Martina Zunica</h3>
+                            <p className='text-center text-sm'>Visual e Information designer, raccoglie dati per raccontare storie; li visualizza per lavoro e per passione. @ta_daaata</p>
                         </div>
                         </div>
                     </div>
@@ -42,8 +42,8 @@ export function Team() {
                         <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://magal.li/i/500/500" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
-                            <h3 className='font-display text-center'>Giancarlo Magalli</h3>
-                            <p className='text-center text-sm'>Regnante</p>
+                            <h3 className='font-display text-center'>Francesco Malatesta</h3>
+                            <p className='text-center text-sm'>WIP</p>
                         </div>
                         </div>
                     </div>
