@@ -4,7 +4,6 @@ const Pie = ({ data, isReverse = false }) => {
     const foreground = isReverse ? '#63576E' : '#63576E'
     const background = isReverse ? '#342741' : '#ECE8E2'
 
-
     return <div style={{ width: '100%', height: 500, position: 'relative' }}>
         <div style={{ width: '100%', marginTop: '140px', fontSize: '74px', position: 'absolute', textAlign: 'center' }}>200</div>
         <div style={{ width: '100%', marginTop: '240px', fontSize: '28px', position: 'absolute', textAlign: 'center' }}>su 1000 giovani</div>

@@ -1,4 +1,5 @@
 import { Container } from '@/components/Container'
+import Bar from './Charts/Bar'
 import Pie from './Charts/Pie'
 
 export function ChartNormal() {
@@ -31,6 +32,21 @@ export function ChartNormal() {
                 "color": "#ECE8E2"
               }
             ]} />
+          </div>
+          <div className='mb-10'></div>
+          <p className="mt-6 text-lg tracking-tight">
+            Bar Chart (Normal)
+          </p>
+          <div>
+            <Bar data={[
+                {
+                  "country": "AD",
+                  "Donne": 60,
+                  "DonneColor": "hsl(100, 70%, 50%)",
+                  "Uomini": 40,
+                  "UominiColor": "hsl(64, 70%, 50%)"
+                }
+              ]} />
           </div>
         </div>
       </Container>
@@ -68,6 +84,21 @@ export function ChartReverse() {
                 "color": "#ECE8E2"
               }
             ]} />
+          </div>
+          <div className='mb-10'></div>
+          <p className="mt-6 text-lg tracking-tight">
+            Bar Chart (Reverse)
+          </p>
+          <div>
+            <Bar isReverse data={[
+                {
+                  "country": "AD",
+                  "Donne": 60,
+                  "DonneColor": "hsl(100, 70%, 50%)",
+                  "Uomini": 40,
+                  "UominiColor": "hsl(64, 70%, 50%)"
+                }
+              ]} />
           </div>
         </div>
       </Container>
