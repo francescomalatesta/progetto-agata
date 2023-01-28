@@ -1,6 +1,6 @@
 import { ResponsiveBar } from '@nivo/bar'
 
-const Bar = ({ data, isReverse = false }) => {
+const Bar = ({ data, stat1, subtitle1, stat2, subtitle2, isReverse = false }) => {
     const foreground = isReverse ? '#E3DDD1' : '#63576E' 
     const background = isReverse ? '#63576E' : '#E3DDD1'
 
@@ -12,7 +12,7 @@ const Bar = ({ data, isReverse = false }) => {
                 'Uomini'
             ]}
             indexBy="country"
-            margin={{ top: 50, right: 130, bottom: 0, left: 60 }}
+            margin={{ top: 50, bottom: 0 }}
             padding={0.3}
             layout="horizontal"
             valueScale={{ type: 'linear' }}
@@ -24,16 +24,15 @@ const Bar = ({ data, isReverse = false }) => {
             axisBottom={null}
             label={null}
             role="application"
-            barAriaLabel={function(e){return e.id+": "+e.formattedValue+" in country: "+e.indexValue}}
         />
-        <div className='flex justify-between ml-16 mr-36 text-left'>
+        <div className='flex justify-between text-left'>
             <div>
-                <h2 className='font-sans text-4xl'>60%</h2>
-                <p>dei laureati è donna</p>
+                <h2 className='font-sans text-4xl'>{stat1}</h2>
+                <p>{subtitle1}</p>
             </div>
             <div>
-            <h2 className='font-sans text-4xl text-right'>40%</h2>
-                <p>dei laureati è uomo</p>
+            <h2 className='font-sans text-4xl text-right'>{stat2}</h2>
+                <p>{subtitle2}</p>
             </div>
         </div>
     </div>

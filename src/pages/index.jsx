@@ -12,6 +12,7 @@ import { Team } from '@/components/Team'
 import { ChartNormal, ChartReverse } from '@/components/Charts'
 import { Timeline } from '@/components/Timeline'
 import Pie from '@/components/Charts/Pie'
+import Bar from '@/components/Charts/Bar'
 
 export default function Home() {
   return (
@@ -121,35 +122,63 @@ export default function Home() {
           </div>}
        />
 
-        <QuoteNormal
-            quote="Le diseguaglianze di genere hanno radici profonde, che riguardano il contesto familiare e della formazione, prima ancora di quello lavorativo. Molti studi mostrano che sono poche le donne iscritte alle materie STEM, nonostante ci siano più donne laureate che uomini."
-            source="Piano nazionale di ripresa e resilienza (2021)"
-        />
+      <TwoColumnsReverse
+        left={<div>
+          <img src='https://tinypic.host/images/2023/01/28/graduation.png' />
+        </div>}
+        right={<div className='text-left sm:mt-20'>
+          <h2 className='font-display text-3xl'>Chi si laurea di più?</h2>
+          <p className='mt-4'>Sono le donne a laurearsi molto di più e in tempi più brevi rispetto agli uomini, con un rapporto che si attesta intorno al 60 a 40, ma le laureate restano in netta minoranza nelle lauree STEM.</p>
+          <Bar
+            stat1="60%"
+            subtitle1="dei laureati è donna"
+            stat2="40%"
+            subtitle2="dei laureati è uomo" 
+            isReverse 
+            data={[
+                {
+                  "country": "Laurea",
+                  "Donne": 60,
+                  "DonneColor": "hsl(100, 70%, 50%)",
+                  "Uomini": 40,
+                  "UominiColor": "hsl(64, 70%, 50%)"
+                }
+            ]} 
+          />
+        </div>}
+      />
 
-        <OneColumnNormal>
-          <h2 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl">
-            Sezione 1 Colonna
-          </h2>
-          <p className="mt-6 text-lg tracking-tight">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor lectus, efficitur vitae augue a, scelerisque finibus nibh. Duis a fringilla nibh. Etiam sit amet placerat orci. Fusce ut tincidunt eros. Nulla vel quam vestibulum, rhoncus risus venenatis, cursus dolor. Pellentesque feugiat risus et arcu euismod dignissim. Proin at sapien ac diam porta cursus.
-          </p>
-        </OneColumnNormal>
+      <TwoColumnsReverse
+        left={<div className='text-left sm:mt-20'>
+          <h2 className='font-display text-3xl mb-4'>Tuttavia...</h2>
+          <p className='mb-2'>Va segnalato come all’interno di ciascuna facoltà la presenza delle donne può variare sensibilmente: se ad esempio nel campo delle Scienze Naturali o delle professioni sanitarie parlare di gender gap sembra quasi anacronistico, guardando i dati relativi al settore ICT ed alle facoltà di ingegneria la situazione cambia sensibilmente: 73,5% dei laureati in ingegneria nel 2019 è uomo.</p>
+          <p>Ed è proprio questo uno dei dati più critici, considerato che parliamo dei settori chiave dell’economia di oggi e soprattutto di domani, traino dell’innovazione e della transizione tecnologica. Le discipline STEM solitamente sono infatti quelle che offrono i percorsi di carriera più retribuiti e con maggiore stabilità. Una tendenza che è destinata a rafforzarsi in un mondo sempre più dipendente dalle tecnologie.</p>
+        </div>}
+        right={<div className='sm:mt-20'>
+          <h1 className='font-display' style={{ fontSize: '10em'}}>73,5%</h1>
+          <div className='text-4xl'>sono uomini</div>
+        </div>}
+      />
 
-        <OneColumnReverse>
-          <h2 className="font-display text-3xl tracking-tight sm:text-4xl md:text-5xl">
-            Sezione 1 Colonna
-          </h2>
-          <p className="mt-6 text-lg tracking-tight">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor lectus, efficitur vitae augue a, scelerisque finibus nibh. Duis a fringilla nibh. Etiam sit amet placerat orci. Fusce ut tincidunt eros. Nulla vel quam vestibulum, rhoncus risus venenatis, cursus dolor. Pellentesque feugiat risus et arcu euismod dignissim. Proin at sapien ac diam porta cursus.
-          </p>
-        </OneColumnReverse>
+      <TwoColumnsReverse
+        left={<div className='text-left sm:mt-20'>
+          <div className='text-5xl'><span className='font-display text-8xl'>“</span>Ciò fa comprendere come anche tante battaglie contro i divari di genere, tra cui quelle per la parità salariale, passino anche dal potenziamento delle STEM in tutti i livelli di istruzione.</div>
+        </div>}
+        right={<div className='sm:mt-20 text-left'>
+          <h1 className='font-display text-3xl mb-4'>Un punto di partenza</h1>
+          <p className='mb-2'>Il quadro che abbiamo esplorato con una prima introduzione ci ha restituito la fotografia di un Paese ancora al chiodo per quanto riguarda stereotipi di genere anche nell'educazione delle ragazze sulle materie STEM.</p>
+          <p className='mb-2'>Nonostante questo, la situazione sembra essere entrata ormai di fatto nelle agende politiche italiane, tanto che il PNRR, una delle misure più importanti e fondamentali per il futuro del nostro Paese, ha individuato proprio nel potenziamento dell'insegnamento STEM tra le ragazze uno dei suoi asset principali in tema di parità di genere.</p>
+          <p>Attraverso il nostro progetto Agata di analisi, andremo ad approfondire la sezione del PNRR dedicata a questi temi, cercando di capire quanti fondi sono stati effettivamente messi a disposizioni, a copertura di quali aree e con quale efficacia.</p>
+        </div>}
+      />
 
-        <TwoColumnsReverse />
-        <QuoteNormal />
-        <QuoteReverse />
-        <ChartNormal />
-        <ChartReverse />
+      <QuoteNormal
+          quote="Le diseguaglianze di genere hanno radici profonde, che riguardano il contesto familiare e della formazione, prima ancora di quello lavorativo. Molti studi mostrano che sono poche le donne iscritte alle materie STEM, nonostante ci siano più donne laureate che uomini."
+          source="Piano nazionale di ripresa e resilienza (2021)"
+      />
+
         <Timeline />
+        
         <Team />
       </main>
       <Footer />
