@@ -2,17 +2,15 @@ import Head from 'next/head'
 
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { OneColumnNormal } from '@/components/OneColumnNormal'
 import { OneColumnReverse } from '@/components/OneColumnReverse'
 import { TwoColumnsNormal } from '@/components/TwoColumnsNormal'
 import { TwoColumnsReverse } from '@/components/TwoColumnsReverse'
 import { QuoteNormal } from '@/components/QuoteNormal'
-import { QuoteReverse } from '@/components/QuoteReverse'
 import { Team } from '@/components/Team'
-import { ChartNormal, ChartReverse } from '@/components/Charts'
 import { Timeline } from '@/components/Timeline'
 import Pie from '@/components/Charts/Pie'
 import Bar from '@/components/Charts/Bar'
+import SmallPie from '@/components/Charts/SmallPie'
 
 export default function Home() {
   return (
@@ -82,44 +80,46 @@ export default function Home() {
               <p className='mb-2'>La quota italiana è di 19,4 per gli studenti di sesso maschile, mentre scende di 6 punti se consideriamo le studentesse, quindi 13,3.</p>
               <p className='mb-2'>L’Italia si colloca, dunque, sotto di 1,6 punti percentuali rispetto alla media continentale, a 4 punti dalla Francia e in linea con il dato tedesco (paradossalmente uno dei paesi con più ampie disparità).</p>
             </div>}
-            right={<div>
-              <div className='text-2xl'>Donne</div>
-              <Pie
-              stat="13,3"
-              subtitle="media Europa: 14,9" 
-              data={[
-                {
-                  "id": "",
-                  "label": "",
-                  "value": 986.7,
-                  "color": "#63576E"
-                },
-                {
-                  "id": "Donne",
-                  "label": "Donne",
-                  "value": 13.3,
-                  "color": "#ECE8E2"
-                }
-              ]} />
-              <div className='text-2xl mt-8'>Uomini</div>
-              <Pie
-              stat="19,4"
-              subtitle="media Europa: 27,9" 
-              data={[
-                {
-                  "id": "",
-                  "label": "",
-                  "value": 980.6,
-                  "color": "#63576E"
-                },
-                {
-                  "id": "Donne",
-                  "label": "Donne",
-                  "value": 19.4,
-                  "color": "#ECE8E2"
-                }
-              ]} />
-            </div>}
+            right={
+              <TwoColumnsNormal left={<>
+                <div className='text-2xl'>Donne</div>
+                <SmallPie
+                  stat="13,3"
+                    subtitle="Media EU: 14,9" 
+                  data={[
+                    {
+                      "id": "Resto",
+                      "label": "Resto",
+                      "value": 986.7,
+                      "color": "#63576E"
+                    },
+                    {
+                      "id": "Donne",
+                      "label": "Donne",
+                      "value": 13.3,
+                      "color": "#ECE8E2"
+                    }
+                  ]} />
+              </>} right={<>
+                <div className='text-2xl'>Uomini</div>
+                <SmallPie
+                  stat="19,4"
+                  subtitle="Media EU: 27,9" 
+                  data={[
+                    {
+                      "id": "Resto",
+                      "label": "Resto",
+                      "value": 980.6,
+                      "color": "#63576E"
+                    },
+                    {
+                      "id": "Uomini",
+                      "label": "Uomini",
+                      "value": 19.4,
+                      "color": "#ECE8E2"
+                    }
+                  ]} />
+              </>} />}
         />
 
         <TwoColumnsReverse
@@ -149,12 +149,12 @@ export default function Home() {
         />
 
         <TwoColumnsReverse
-          left={<div className='text-left sm:mt-20'>
+          left={<div className='text-left'>
             <h2 className='font-display text-3xl mb-4'>Tuttavia...</h2>
-            <p className='mb-2'>Va segnalato come all’interno di ciascuna facoltà la presenza delle donne può variare sensibilmente: se ad esempio nel campo delle Scienze Naturali o delle professioni sanitarie parlare di gender gap sembra quasi anacronistico, guardando i dati relativi al settore ICT ed alle facoltà di ingegneria la situazione cambia sensibilmente: 73,5% dei laureati in ingegneria nel 2019 è uomo.</p>
+            <p className='mb-2'>Va segnalato come all'interno di ciascuna facoltà la presenza delle donne può variare sensibilmente: se ad esempio nel campo delle Scienze Naturali o delle professioni sanitarie parlare di gender gap sembra quasi anacronistico, guardando i dati relativi al settore ICT ed alle facoltà di ingegneria la situazione cambia sensibilmente: 73,5% dei laureati in ingegneria nel 2019 è uomo.</p>
             <p>Ed è proprio questo uno dei dati più critici, considerato che parliamo dei settori chiave dell’economia di oggi e soprattutto di domani, traino dell’innovazione e della transizione tecnologica. Le discipline STEM solitamente sono infatti quelle che offrono i percorsi di carriera più retribuiti e con maggiore stabilità. Una tendenza che è destinata a rafforzarsi in un mondo sempre più dipendente dalle tecnologie.</p>
           </div>}
-          right={<div className='sm:mt-20'>
+          right={<div className=''>
             <h1 className='font-display' style={{ fontSize: '10em'}}>73,5%</h1>
             <div className='text-4xl'>sono uomini</div>
           </div>}
@@ -162,7 +162,7 @@ export default function Home() {
 
         <TwoColumnsReverse
           left={<div className='text-left sm:mt-20'>
-            <div className='text-5xl'><span className='font-display text-8xl'>“</span>Ciò fa comprendere come anche tante battaglie contro i divari di genere, tra cui quelle per la parità salariale, passino anche dal potenziamento delle STEM in tutti i livelli di istruzione.</div>
+            <div className='text-3xl mx-16'><span className='font-display text-8xl'>“</span>Ciò fa comprendere come anche tante battaglie contro i divari di genere, tra cui quelle per la parità salariale, passino anche dal potenziamento delle STEM in tutti i livelli di istruzione.</div>
           </div>}
           right={<div className='sm:mt-20 text-left'>
             <h1 className='font-display text-3xl mb-4'>Un punto di partenza</h1>
@@ -183,7 +183,7 @@ export default function Home() {
             <p className='mb-2'>Sono oltre 38,5 miliardi di euro i fondi del PNRR destinati alle misure per la parità di genere. Di questi, la maggior parte sono risorse indirette, con un effetto potenziale solo collaterale sulle condizioni delle donne in Italia.</p>
             <p>L’8% dei fondi Pnrr per la parità di genere sono considerati a impatto diretto: una quota che corrisponde a poco più di 3 miliardi e che non è indirizzata a tutti gli ambiti di valutazione delle misure. Alcuni dei quali, quindi, vedranno potenzialmente dei benefici solo collaterali.</p>
 
-            <div className='bg-backgroundNormal text-foregroundNormal p-4 mt-4 rounded-md'>
+            <div className='bg-backgroundNormal text-foregroundNormal p-4 mt-12 rounded-md'>
               <h2 className='font-display text-2xl mb-4'>Cos'è l'impatto diretto?</h2>
               <p>Lorem ipsum dolor...</p>
             </div>
@@ -211,11 +211,13 @@ export default function Home() {
         />
 
         <OneColumnReverse>
+          <div className='mt-8 mb-8'>
             <div className='text-3xl mb-4'>Nuove borse di studio per l'accesso equo all'educazione</div>
             <p className='mb-2'>Assicurare un accesso equo all'educazione aumentando l'iscrizione agli studi universitari dei giovani in situazioni socio-economiche difficili e che tendono a subire un alto costo opportunità dalla scelta di proseguire gli studi piuttosto che trovare un lavoro dopo il diploma.</p>
             <p className='mb-6'>Verrà incrementato il valore in denaro delle borse di studio nuove e già esistenti, e saranno fornite a una percentuale maggiore di studenti, così da ridurre il gap con la media europea in questo ambito. L'investimento totale sull'obiettivo specifico è di 500 milioni. Come si evince dal prospetto del piano, non si tratta di una misura solo al lavoro per la riduzione della disparità di genere negli studi, ma anche di ammortizzazione sociale per supportare l'accesso delle frange più “deboli” alla carriera universitaria.</p>
-            <h2 className='text-2xl font-bold mb-8'>Come farlo?</h2>
+            <h2 className='text-2xl font-bold mb-2'>Come farlo?</h2>
             <img style={{ maxWidth: '48px', margin: '0px auto' }} src='https://tinypic.host/images/2023/01/28/arrow-down.png' />
+          </div>
         </OneColumnReverse>
 
         <Timeline />
