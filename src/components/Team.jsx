@@ -32,7 +32,7 @@ export function Team() {
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className='font-display text-center'>Martina Zunica</h3>
-                            <p className='text-center text-sm'>Visual e Information designer, raccoglie dati per raccontare storie; li visualizza per lavoro e per passione. @ta_daaata</p>
+                            <p className='text-center text-sm m-6'>Visual e Information designer, raccoglie dati per raccontare storie; li visualizza per lavoro e per passione. @ta_daaata</p>
                         </div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ export function Team() {
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className='font-display text-center'>Francesco Malatesta</h3>
-                            <p className='text-center text-sm'>Senior Software Developer presso Hootsuite. Appassionato di tecnologia e informatica da quando aveva 6 anni, anno in cui ha ricevuto il suo primo computer. Lavora per Hootsuite dal 2015 e ha una sua azienda di consulenza, In Crescendo.</p>
+                            <p className='text-center text-sm'>Senior Software Developer presso Hootsuite. Appassionato di tecnologia e informatica praticamente da sempre. Lavora per Hootsuite dal 2015 e ha una sua azienda di consulenza, In Crescendo.</p>
                         </div>
                         </div>
                     </div>
