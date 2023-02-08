@@ -232,8 +232,8 @@ export default function Home() {
             right={<div className='text-left sm:mt-40 sm:ml-10'>
             <h2 className='font-display text-3xl mb-4'>Un orientamento attivo nella transizione scuola - università</h2>
             <p className='mb-2'>Aumentare il numero di laureati, incoraggiando il passaggio dalla scuola secondaria superiore all'università, così da ridurre allo stesso tempo il tasso di abbandono degli studi universitari. Lo scopo è migliorare  i tassi di frequenza,  i livelli di apprendimento e il numero di ammessi ai successivi anni accademici, nonchè ridurre il gap di genere sia nel campo educativo che lavorativo. Verranno svolti corsi di orientamento per gli studenti dal terzo anno delle superiori in poi per aiutarli nella scelta della facoltà a cui iscriversi.</p>
-            <h2 className='text-2xl font-bold mb-8'>Come farlo?</h2>
-            <img style={{ maxWidth: '48px', margin: '0px auto' }} src='https://tinypic.host/images/2023/01/28/arrow-down.png' />
+            <h2 className='text-2xl font-bold mb-4'>Come farlo?</h2>
+            <img style={{ maxWidth: '36px', marginLeft: '50px' }} src='https://tinypic.host/images/2023/01/28/arrow-down.png' />
           </div>}
           />
 
