@@ -244,13 +244,13 @@ export default function Home() {
           <p className='mt-20 text-sm'>*Si tratta di una stima media degli studenti italiani iscritti al 3°, 4° e 5° anno delle superiori durante gli anni di investimento. Il numero di studenti iscritti all'Orientamento Attivo sarà monitorato dal MUR.
 L'investimento è collegato con la Riforma 1.4 della stessa missione e componente che riguarda proprio il sistema di orientamento degli studenti che mira all'introduzione di moduli nelle scuole di almeno 30 ore all'anno.</p>
         </div>}
-            right={<div className='text-center sm:mt-8'>
+            right={<div className='text-center'>
             <div>
-              <img style={{ width: '34px', height: '34px', margin: '0px auto'}} src='https://tinypic.host/images/2023/01/28/ellipse.png' />
+              <img style={{ width: '100px', height: '100px', margin: '0px auto'}} src='https://tinypic.host/images/2023/02/08/icona-1.png' />
             </div>
             <p className='ml-16 mr-16 mt-8'>Le lezioni sono tenute da docenti di istruzione superiore agli studenti del terzo, quarto e quinto anno della scuola secondaria superiore.</p>
             <div className='mt-8 mb-8'>
-              <img style={{ width: '34px', margin: '0px auto'}} src='https://tinypic.host/images/2023/01/28/ellipse.png' />
+              <img style={{ width: '100px', height: '100px', margin: '0px auto'}} src='https://tinypic.host/images/2023/02/08/icona-2.png' />
             </div>
             <p className='ml-16 mr-16 mt-8'>La sostenibilità si ottiene estendendo la formazione ai docenti delle scuole superiori in modo che, a seguito di questo programma triennale, sia disponibile un orientamento con il personale interno delle scuole superiori.</p>
           </div>}
