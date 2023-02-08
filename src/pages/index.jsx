@@ -24,6 +24,7 @@ export default function Home() {
       <Header />
       <main>
         <TwoColumnsNormal 
+          id="progetto-agata"
           left={<div className='text-left sm:mt-28'>
             <h1 className='font-display text-4xl'>Un gioco da ragazzi</h1>
             <h2 className='font-sans text-xl'>Gender Gap e materie STEM: un problema dei giovani</h2>
@@ -178,6 +179,7 @@ export default function Home() {
         />
 
         <TwoColumnsReverse
+          id="i-fondi-del-pnrr"
           left={<div className='text-left sm:mt-20'>
             <div className='text-5xl mb-4'>I fondi del PNRR</div>
             <p className='mb-2'>Sono oltre 38,5 miliardi di euro i fondi del PNRR destinati alle misure per la parità di genere. Di questi, la maggior parte sono risorse indirette, con un effetto potenziale solo collaterale sulle condizioni delle donne in Italia.</p>

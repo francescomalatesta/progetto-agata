@@ -76,10 +76,9 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-backgroundNormal p-4 text-lg tracking-tight text-foregroundNormal shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#item">Menu Item</MobileNavLink>
-            <MobileNavLink href="#item">Menu Item</MobileNavLink>
-            <MobileNavLink href="#item">Menu Item</MobileNavLink>
-            <MobileNavLink href="#item">Menu Item</MobileNavLink>
+            <MobileNavLink href="#progetto-agata">Progetto Agata</MobileNavLink>
+            <MobileNavLink href="#i-fondi-del-pnrr">I fondi del PNRR</MobileNavLink>
+            <MobileNavLink href="#about-us">About us</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -99,10 +98,9 @@ export function Header() {
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
-              <NavLink href="#item">Menu Item</NavLink>
-              <NavLink href="#item">Menu Item</NavLink>
-              <NavLink href="#item">Menu Item</NavLink>
-              <NavLink href="#item">Menu Item</NavLink>
+              <NavLink href="#progetto-agata">Progetto Agata</NavLink>
+              <NavLink href="#i-fondi-del-pnrr">I fondi del PNRR</NavLink>
+              <NavLink href="#about-us">About us</NavLink>
             </div>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

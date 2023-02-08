@@ -1,9 +1,9 @@
 import { Container } from '@/components/Container'
 
-export function TwoColumnsReverse({ left, right }) {
+export function TwoColumnsReverse({ id, left, right }) {
   return (
     <section
-      id="features"
+      id={id}
       aria-label="Features for running your books"
       className="relative overflow-hidden bg-backgroundReverse text-foregroundReverse py-16"
     >

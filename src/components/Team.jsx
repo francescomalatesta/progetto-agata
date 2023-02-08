@@ -3,7 +3,7 @@ import { Container } from '@/components/Container'
 export function Team() {
   return (
     <section
-      id="features"
+      id="about-us"
       aria-label="Features for running your books"
       className="relative overflow-hidden bg-backgroundReverse text-foregroundReverse py-16"
     >
@@ -28,7 +28,7 @@ export function Team() {
                 </li>
                 <li>
                     <div className="space-y-6">
-                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://tinypic.host/images/2023/02/06/martina.png" alt="" />
+                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://tinypic.host/images/2023/02/08/martina.png" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className='font-display text-center'>Martina Zunica</h3>

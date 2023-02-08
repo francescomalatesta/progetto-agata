@@ -1,9 +1,9 @@
 import { Container } from '@/components/Container'
 
-export function TwoColumnsNormal({ left, right }) {
+export function TwoColumnsNormal({ id, left, right }) {
   return (
     <section
-      id="features"
+      id={id}
       aria-label="Features for running your books"
       className="relative overflow-hidden bg-backgroundNormal text-foregroundNormal py-16"
     >
