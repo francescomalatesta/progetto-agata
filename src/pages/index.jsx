@@ -31,7 +31,7 @@ export default function Home() {
             <p className='mt-2'>Nonostante ci siano stati diversi progressi rispetto agli ultimi 10 anni, le donne restano ancora ampiamente sotto rappresentate, soprattutto quando si parla di educazione scientifica.</p>
           </div>}
           right={<>
-            <img src='https://tinypic.host/images/2023/01/28/education.png' />
+            <img src='https://tinypic.host/images/2023/02/08/cover.png' />
           </>} 
         />
 
@@ -43,7 +43,7 @@ export default function Home() {
             <p className='mt-2'>Al momento del nostro studio, i dati si rivelano ancora complessi da reperire e probabilmente potremo avere nei prossimi anni l’effettiva misura dell’efficacia di queste misure e soprattutto di dati puliti ed obiettivi; intanto vogliamo condividere uno strumento aperto e collaborativo per osservare il lavoro che è stato iniziato e fatto finora. Nei prossimi mesi contiamo di insistere per richiedere l’accesso a dati più accurati e per seguire con maggiore rigore l’andamento della distribuzione dei fondi.</p>
           </div>}
           right={<>
-            <img src='https://tinypic.host/images/2023/01/28/education.png' />
+            <img src='https://tinypic.host/images/2023/02/08/progetto-agata.png' />
           </>} 
         />
 
