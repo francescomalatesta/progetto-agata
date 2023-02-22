@@ -52,23 +52,46 @@ export default function Home() {
 
         <TwoColumnsNormal
           left={<div>
-            <Pie
-            stat="16,4"
-            subtitle="su 1000 giovani" 
-            data={[
-              {
-                "id": "Non-STEM",
-                "label": "Non-STEM",
-                "value": 983.6,
-                "color": "#63576E"
-              },
-              {
-                "id": "STEM",
-                "label": "STEM",
-                "value": 16.4,
-                "color": "#ECE8E2"
-              }
-            ]} />
+            <div className='hidden lg:block'>
+              <Pie
+                stat="16,4"
+                subtitle="su 1000 giovani" 
+                data={[
+                  {
+                    "id": "Non-STEM",
+                    "label": "Non-STEM",
+                    "value": 983.6,
+                    "color": "#63576E"
+                  },
+                  {
+                    "id": "STEM",
+                    "label": "STEM",
+                    "value": 16.4,
+                    "color": "#ECE8E2"
+                  }
+                ]} 
+              />
+            </div>
+            <div className='block lg:hidden'>
+              <SmallPie
+                stat="16,4"
+                subtitle="su 1000 giovani" 
+                data={[
+                  {
+                    "id": "Non-STEM",
+                    "label": "Non-STEM",
+                    "value": 983.6,
+                    "color": "#63576E"
+                  },
+                  {
+                    "id": "STEM",
+                    "label": "STEM",
+                    "value": 16.4,
+                    "color": "#ECE8E2"
+                  }
+                ]} 
+              />
+            </div>
           </div>}
           right={<div className='text-left sm:mt-20'>
             <h2 className='font-display text-3xl mb-4'>I giovani laureati nelle materie STEM</h2>
@@ -132,9 +155,9 @@ export default function Home() {
 
         <TwoColumnsReverse
           left={<div>
-            <img src='https://tinypic.host/images/2023/01/28/graduation.png' />
+            <img src='/graduation.png' />
           </div>}
-          right={<div className='text-left sm:mt-20'>
+          right={<div className='text-left sm:mt-20 mb-3'>
             <h2 className='font-display text-3xl'>Chi si laurea di più?</h2>
             <p className='mt-4'>Sono le donne a laurearsi molto di più e in tempi più brevi rispetto agli uomini, con un rapporto che si attesta intorno al 60 a 40, ma le laureate restano in netta minoranza nelle lauree STEM.</p>
             <Bar
@@ -162,10 +185,16 @@ export default function Home() {
             <p className='mb-2'>Va segnalato come all'interno di ciascuna facoltà la presenza delle donne può variare sensibilmente: se ad esempio nel campo delle Scienze Naturali o delle professioni sanitarie parlare di gender gap sembra quasi anacronistico, guardando i dati relativi al settore ICT ed alle facoltà di ingegneria la situazione cambia sensibilmente: basti pensare che il 73,5% dei laureati in Ingegneria nel 2019 è uomo.</p>
             <p>Ed è proprio questo uno dei dati più critici, considerato che parliamo dei settori chiave dell'economia di oggi e soprattutto di domani, traino dell'innovazione e della transizione tecnologica.</p>
           </div>}
-          right={<div className=''>
-            <h1 className='font-display' style={{ fontSize: '10em'}}>73,5%</h1>
-            <div className='text-4xl'>sono uomini</div>
-          </div>}
+          right={<>
+            <div className='hidden lg:block'>
+              <h1 className='font-display' style={{ fontSize: '10em'}}>73,5%</h1>
+              <div className='text-4xl'>sono uomini</div>
+            </div>
+            <div className='block lg:hidden text-center'>
+              <h1 className='font-display text-9xl'>73,5%</h1>
+              <div className='text-2xl mt-2'>sono uomini</div>
+            </div>
+          </>}
         />
 
         <TwoColumnsReverse
@@ -192,25 +221,47 @@ export default function Home() {
             <p className='mb-2'>I fondi del PNRR destinati alle misure per la parità di genere in Italia valgono 38,5 miliardi di euro. Tuttavia di questa cifra, la stragrande maggioranza confluisce in risorse ed iniziative indirette, ossia misure che hanno obiettivi più ampi ed articolati e che avranno un effetto positivo, ma solo potenziale e collaterale sulla condizione delle donne in Italia.</p>
             <p>Ad esempio i fondi a supporto delle ragazze nello studio delle materie STEM rientrano in un più generico “sostegno per favorire l'accesso di tutti all'università”.</p>
           </div>}
-          right={<div className=''>
-                   <Pie
-                    isReverse
-                    stat="38.5"
-                    subtitle="miliardi di euro" 
-                    data={[
-                      {
-                        "id": "Impatto Diretto",
-                        "label": "Impatto Diretto",
-                        "value": 8,
-                        "color": "#63576E"
-                      },
-                      {
-                        "id": "Altre Iniziative",
-                        "label": "Altre Iniziative",
-                        "value": 92,
-                        "color": "#ECE8E2"
-                      }
-                    ]} />
+          right={<div>
+            <div className='hidden lg:block'>
+                <Pie
+                  isReverse
+                  stat="38.5"
+                  subtitle="miliardi di euro" 
+                  data={[
+                    {
+                      "id": "Impatto Diretto",
+                      "label": "Impatto Diretto",
+                      "value": 8,
+                      "color": "#63576E"
+                    },
+                    {
+                      "id": "Altre Iniziative",
+                      "label": "Altre Iniziative",
+                      "value": 92,
+                      "color": "#ECE8E2"
+                    }
+                  ]} />
+            </div>
+            <div className='block lg:hidden'>
+              <SmallPie
+                  isReverse
+                  stat="38.5"
+                  subtitle="miliardi di euro" 
+                  data={[
+                    {
+                      "id": "Impatto Diretto",
+                      "label": "Impatto Diretto",
+                      "value": 8,
+                      "color": "#63576E"
+                    },
+                    {
+                      "id": "Altre Iniziative",
+                      "label": "Altre Iniziative",
+                      "value": 92,
+                      "color": "#ECE8E2"
+                    }
+                  ]} />
+            </div>
           </div>}
         />
 
@@ -229,10 +280,20 @@ export default function Home() {
         <Timeline />
 
         <TwoColumnsReverse
-          left={<div className='sm:mt-20 rounded-full' style={{ backgroundColor: '#E7D5D5', height: '600px'}}>
-            <h1 className='font-display text-6xl' style={{ paddingTop: '250px' }}>250 Milioni</h1>
-            <div className='text-2xl'>investimento totale sull'obiettivo specifico</div>
-          </div>}
+          left={<>
+            <div className='hidden lg:block'>
+              <div className='sm:mt-20 rounded-full' style={{ backgroundColor: '#E7D5D5', height: '600px'}}>
+                <h1 className='font-display text-6xl' style={{ paddingTop: '250px' }}>250 Milioni</h1>
+                <div className='text-2xl'>investimento totale sull'obiettivo specifico</div>
+              </div>
+            </div>
+            <div className='block lg:hidden text-center'>
+              <div className='rounded-full pt-24' style={{ backgroundColor: '#E7D5D5', height: '350px'}}>
+                <h1 className='font-display text-4xl'>250 Milioni</h1>
+                <div className='text-xl'>investimento totale sull'obiettivo specifico</div>
+              </div>
+            </div>
+          </>}
             right={<div className='text-left sm:mt-40 sm:ml-10'>
             <h2 className='font-display text-3xl mb-4'>Un orientamento attivo nella transizione scuola - università</h2>
             <p className='mb-2'>Aumentare il numero di laureati, incoraggiando il passaggio dalla scuola secondaria superiore all'università, così da ridurre allo stesso tempo il tasso di abbandono degli studi universitari. Lo scopo è migliorare i tassi di frequenza, i livelli di apprendimento e il numero di ammessi ai successivi anni accademici, nonché ridurre il gap di genere sia nel campo educativo che lavorativo. Verranno svolti corsi di orientamento per gli studenti dal terzo anno delle superiori in poi per aiutarli nella scelta della facoltà a cui iscriversi.</p>
@@ -263,6 +324,18 @@ L'investimento è collegato con la Riforma 1.4 della stessa missione e component
             <p className='ml-16 mr-16 mt-8'>La sostenibilità si ottiene estendendo la formazione ai docenti delle scuole superiori in modo che, a seguito di questo programma triennale, sia disponibile un orientamento con il personale interno delle scuole superiori.</p>
           </div>}
           />
+
+        <TwoColumnsNormal 
+          id="progetto-agata"
+          left={<div className='text-left'>
+            <h1 className='font-display text-4xl'>Incoerenze e soffitti di cristallo</h1>
+            <p className='mt-4'>Ai margini della ricerca, è fondamentale sottolineare come l'importanza di una rivendicazione di genere nello studio delle materie e delle competenze STEM sia assolutamente imprescindibile, soprattutto in un contesto storico come quello attuale in cui in particolare la competente tech sta diventando ormai proprietà intrinseca di quasi ogni settore.</p>
+            <p className='mt-2'>Tuttavia, chiedere e sostenere le ragazze nella scelta e nei percorsi scientifici diventa praticamente inutile se poi nelle posizioni apicali continuiamo a trovare sempre e solo esclusivamente uomini. È necessario che i temi e le discussioni intorno al gender gap (dallo studio, all'accesso al lavoro,  al supporto della maternità etc..) vadano tutte di pari passi per ottenere risultati visibili e concreti tanto per le donne e per tutta la comunità.</p>
+          </div>}
+          right={<>
+            <img src='/cristallo.png' />
+          </>} 
+        />
 
         <Team />
       </main>
