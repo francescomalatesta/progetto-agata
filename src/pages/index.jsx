@@ -11,6 +11,7 @@ import { Timeline } from '@/components/Timeline'
 import Pie from '@/components/Charts/Pie'
 import Bar from '@/components/Charts/Bar'
 import SmallPie from '@/components/Charts/SmallPie'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -32,16 +33,16 @@ export default function Home() {
             <p className='mt-2'>Nonostante ci siano stati diversi progressi rispetto agli ultimi 10 anni, le donne restano ancora ampiamente sotto rappresentate, soprattutto quando si parla di educazione scientifica.</p>
           </div>}
           right={<>
-            <img src='https://tinypic.host/images/2023/02/08/cover.png' />
+            <img src='/cover.png' />
           </>} 
         />
 
         <TwoColumnsReverse
           left={<div className='text-left'>
             <h1 className='font-display text-4xl'>Progetto Agata</h1>
-            <p className='mt-4'>Il progetto di analisi è frutto di un’attività di monitoraggio civico, resa possibile grazie al concorso per progetti di monitoraggio del PNRR, realizzato nel contesto della campagna DatiBeneComune.</p>
-            <p className='mt-2'>L’obiettivo è quello di indagare il divario di genere nell’accesso allo studio delle materie STEM in Italia, con uno sguardo al contesto europeo.</p>
-            <p className='mt-2'>Al momento del nostro studio, i dati si rivelano ancora complessi da reperire e probabilmente potremo avere nei prossimi anni l’effettiva misura dell’efficacia di queste misure e soprattutto di dati puliti ed obiettivi; intanto vogliamo condividere uno strumento aperto e collaborativo per osservare il lavoro che è stato iniziato e fatto finora. Nei prossimi mesi contiamo di insistere per richiedere l’accesso a dati più accurati e per seguire con maggiore rigore l’andamento della distribuzione dei fondi.</p>
+            <p className='mt-4'>Il progetto di analisi è frutto di un'attività di monitoraggio civico, resa possibile grazie al concorso per progetti di monitoraggio del PNRR, realizzato nel contesto della campagna DatiBeneComune.</p>
+            <p className='mt-2'>L'obiettivo è quello di indagare il divario di genere nell'accesso allo studio delle materie STEM in Italia, con uno sguardo al contesto europeo.</p>
+            <p className='mt-2'>Al momento del nostro studio, i dati si rivelano ancora complessi da reperire e probabilmente potremo avere nei prossimi anni l'effettiva misura dell'efficacia di queste misure e soprattutto di dati puliti ed obiettivi; intanto vogliamo condividere uno strumento aperto e collaborativo per osservare il lavoro che è stato iniziato e fatto finora. Nei prossimi mesi contiamo di insistere per richiedere l'accesso a dati più accurati e per seguire con maggiore rigore l'andamento della distribuzione dei fondi.</p>
           </div>}
           right={<>
             <img src='https://tinypic.host/images/2023/02/08/progetto-agata.png' />
@@ -75,51 +76,60 @@ export default function Home() {
        />
 
         <TwoColumnsNormal
-            left={<div className='text-left sm:mt-20'>
+            py='py-4'
+            left={<div className='text-left'>
               <h2 className='font-display text-3xl mb-4'>Gender gap: fin dall'iscrizione ai corsi è visibile una differenza.</h2>
               <p className='mb-2'>In Europa, le laureate sono solo 14,9 mentre i laureati sono 27,9 ovvero quasi il doppio.</p>
               <p className='mb-2'>La quota italiana è di 19,4 per gli studenti di sesso maschile, mentre scende di 6 punti se consideriamo le studentesse, quindi 13,3.</p>
               <p className='mb-2'>L’Italia si colloca, dunque, sotto di 1,6 punti percentuali rispetto alla media continentale, a 4 punti dalla Francia e in linea con il dato tedesco (paradossalmente uno dei paesi con più ampie disparità).</p>
             </div>}
             right={
-              <TwoColumnsNormal left={<>
-                <div className='text-2xl'>Donne</div>
-                <SmallPie
-                  stat="13,3"
+              <TwoColumnsNormal
+                py="py-0"
+                left={<>
+                  <div className='text-2xl'>Donne</div>
+                  <SmallPie
+                    stat="13,3"
+                      subtitle="Media EU: 14,9" 
                     subtitle="Media EU: 14,9" 
-                  data={[
-                    {
-                      "id": "Resto",
-                      "label": "Resto",
-                      "value": 986.7,
-                      "color": "#63576E"
-                    },
-                    {
-                      "id": "Donne",
-                      "label": "Donne",
-                      "value": 13.3,
-                      "color": "#ECE8E2"
-                    }
-                  ]} />
-              </>} right={<>
-                <div className='text-2xl'>Uomini</div>
-                <SmallPie
-                  stat="19,4"
+                      subtitle="Media EU: 14,9" 
+                    data={[
+                      {
+                        "id": "Resto",
+                        "label": "Resto",
+                        "value": 986.7,
+                        "color": "#63576E"
+                      },
+                      {
+                        "id": "Donne",
+                        "label": "Donne",
+                        "value": 13.3,
+                        "color": "#ECE8E2"
+                      }
+                    ]} />
+                </>} 
+                right={<>
+                  <div className='text-2xl'>Uomini</div>
+                  <SmallPie
+                    stat="19,4"
+                    subtitle="Media EU: 27,9" 
                   subtitle="Media EU: 27,9" 
-                  data={[
-                    {
-                      "id": "Resto",
-                      "label": "Resto",
-                      "value": 980.6,
-                      "color": "#63576E"
-                    },
-                    {
-                      "id": "Uomini",
-                      "label": "Uomini",
-                      "value": 19.4,
-                      "color": "#ECE8E2"
-                    }
-                  ]} />
+                    subtitle="Media EU: 27,9" 
+                    data={[
+                      {
+                        "id": "Resto",
+                        "label": "Resto",
+                        "value": 980.6,
+                        "color": "#63576E"
+                      },
+                      {
+                        "id": "Uomini",
+                        "label": "Uomini",
+                        "value": 19.4,
+                        "color": "#ECE8E2"
+                      }
+                    ]} />
+                  <div className='mb-16'></div>
               </>} />}
         />
 

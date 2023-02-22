@@ -1,11 +1,16 @@
 import { Container } from '@/components/Container'
 
-export function TwoColumnsNormal({ id, left, right }) {
+export function TwoColumnsNormal({ id, left, right, py }) {
+  let paddingY = 'py-16'
+  if(py) {
+    paddingY = py
+  }
+
   return (
     <section
       id={id}
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-backgroundNormal text-foregroundNormal py-16"
+      className={`relative overflow-hidden bg-backgroundNormal text-foregroundNormal ${paddingY}`}
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">

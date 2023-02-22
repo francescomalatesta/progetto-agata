@@ -17,7 +17,7 @@ export function Team() {
             <ul role="list" className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:max-w-5xl lg:grid-cols-3">
                 <li>
                     <div className="space-y-6">
-                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://tinypic.host/images/2023/02/06/domiziana.png" alt="" />
+                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="/domiziana.png" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className='font-display text-center'>Domiziana Ferrari</h3>
@@ -28,7 +28,7 @@ export function Team() {
                 </li>
                 <li>
                     <div className="space-y-6">
-                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://tinypic.host/images/2023/02/08/martina.png" alt="" />
+                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="/martina.png" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className='font-display text-center'>Martina Zunica</h3>
@@ -39,7 +39,7 @@ export function Team() {
                 </li>
                 <li>
                     <div className="space-y-6">
-                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="https://tinypic.host/images/2023/02/06/francesco.png" alt="" />
+                        <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src="/francesco.png" alt="" />
                         <div className="space-y-2">
                         <div className="space-y-1 text-lg font-medium leading-6">
                             <h3 className='font-display text-center'>Francesco Malatesta</h3>
