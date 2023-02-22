@@ -19,13 +19,13 @@ export function Timeline() {
             <li className="mb-20 ml-10 text-left">
                 <div className="absolute w-3 h-3 bg-foregroundNormal rounded-full mt-1.5 -left-1.5 border border-foregroundNormal"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-foregroundNormal">Obiettivo per il 2023, ma l'azione è ancora da attivare.</time>
-                <h3 className="text-3xl mb-2 font-display text-foregroundNormal">Almeno 300.000 borse di studio.</h3>
+                <h3 className="text-3xl mb-2 font-display text-foregroundNormal">Almeno 300.000 borse di studio</h3>
                 <p className="mb-4 text-base font-normal text-foregroundNormal">Garantire borse di studio ad almeno 300.000 studenti attraverso il programma GOL (Guaranteed Employability of Workers).</p>
             </li>
             <li className="ml-10 text-left">
                 <div className="absolute w-3 h-3 bg-foregroundNormal rounded-full mt-1.5 -left-1.5 border border-foregroundNormal"></div>
                 <time className="mb-1 text-sm font-normal leading-none text-foregroundNormal">Obiettivo per il 2024. Le borse sono state già erogate.</time>
-                <h3 className="text-3xl mb-2 font-display text-foregroundNormal">Borse di studio più vantaggiose.</h3>
+                <h3 className="text-3xl mb-2 font-display text-foregroundNormal">Borse di studio più vantaggiose</h3>
                 <p className="mb-4 text-base font-normal text-foregroundNormal">Garantire borse di studio, incrementate mediamente di 700 euro, ad almeno 336.000 studenti.</p>
             </li>
         </ol>
