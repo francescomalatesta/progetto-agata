@@ -38,7 +38,7 @@ export default function Home() {
         />
 
         <TwoColumnsReverse
-          left={<div className='text-left'>
+          left={<div className='text-left sm:mr-2'>
             <h1 className='font-display text-4xl'>Progetto Agata</h1>
             <p className='mt-4'>Il progetto di analisi è frutto di un'attività di monitoraggio civico del PNRR, reso possibile grazie al supporto dell'associazione onData e dell'organizzazione internazionale indipendente ActionAid.</p>
             <p className='mt-2'>L'obiettivo della ricerca è quello di indagare il divario di genere nell'accesso allo studio delle materie STEM in Italia e di come i fondi del PNRR stiano effettivamente producendo valore per colmare questo gap.</p>
@@ -93,7 +93,7 @@ export default function Home() {
               />
             </div>
           </div>}
-          right={<div className='text-left sm:mt-20'>
+          right={<div className='text-left sm:mt-40'>
             <h2 className='font-display text-3xl mb-4'>I giovani laureati nelle materie STEM</h2>
             <p>Il panorama italiano si dimostra sostanzialmente diverso da quello europeo ed emerge l'effettiva presenza di una disparità. Se infatti consideriamo il target dei giovani tra 20 e 29 anni, la media EU dei laureati STEM è di circa 21 ogni 1.000 giovani, mentre l'Italia si attesta intorno al 16,4.</p>
           </div>}
@@ -102,10 +102,10 @@ export default function Home() {
         <TwoColumnsNormal
             py='py-4'
             left={<div className='text-left'>
-              <h2 className='font-display text-3xl mb-4'>Gender gap: fin dall'iscrizione ai corsi è visibile una differenza</h2>
-              <p className='mb-2'>In Europa, le laureate sono solo 14,9 mentre i laureati sono 27,9, ovvero quasi il doppio.</p>
+              <h2 className='font-display text-3xl mb-4'>Gender gap: fin dall'iscrizione ai corsi <br/>è visibile una differenza</h2>
+              <p className='mb-2 mr-1'>In Europa, le laureate sono solo 14,9 mentre i laureati sono 27,9, ovvero quasi il doppio.</p>
               <p className='mb-2'>La quota italiana è di 19,4 per gli studenti di sesso maschile, mentre scende di 6 punti se consideriamo le studentesse, quindi 13,3.</p>
-              <p className='mb-2'>L'Italia si colloca, dunque, sotto di 1,6 punti percentuali rispetto alla media continentale.</p>
+              <p className='mb-2'>L'Italia si colloca, dunque, sotto di 1,6 punti percentuali rispetto alla <br className='hidden sm:block' />media continentale.</p>
             </div>}
             right={
               <TwoColumnsNormal
@@ -157,7 +157,7 @@ export default function Home() {
           left={<div>
             <img src='/graduation.png' />
           </div>}
-          right={<div className='text-left sm:mt-20 mb-3'>
+          right={<div className='text-left sm:mt-32 mb-3'>
             <h2 className='font-display text-3xl'>Chi si laurea di più?</h2>
             <p className='mt-4'>Sono le donne a laurearsi molto di più e in tempi più brevi rispetto agli uomini, con un rapporto che si attesta intorno al 60 a 40, ma le laureate restano in netta minoranza nelle lauree STEM.</p>
             <Bar
@@ -190,7 +190,7 @@ export default function Home() {
               <h1 className='font-display' style={{ fontSize: '10em'}}>73,5%</h1>
               <div className='text-4xl'>sono uomini</div>
             </div>
-            <div className='block lg:hidden text-center'>
+            <div className='block lg:hidden text-center mt-8 sm:mt-0'>
               <h1 className='font-display text-9xl'>73,5%</h1>
               <div className='text-2xl mt-2'>sono uomini</div>
             </div>
@@ -198,14 +198,15 @@ export default function Home() {
         />
 
         <TwoColumnsReverse
-          left={<div className='text-left sm:mt-20'>
-            <div className='text-3xl mx-16'><span className='font-display text-8xl'>“</span>Ciò fa comprendere come anche tante battaglie contro i divari di genere, tra cui quelle per la parità salariale, passino anche dal potenziamento delle STEM in tutti i livelli di istruzione.</div>
+          py={'sm:py-16 pb-16'}
+          left={<div className='text-center sm:text-left sm:mt-16'>
+            <div className='text-2xl text-center sm:text-left sm:text-3xl mx-8'><span className='font-display text-8xl'>“</span>Ciò fa comprendere come anche tante battaglie contro i divari di genere, tra cui quelle per la parità salariale, passino anche dal potenziamento delle STEM in tutti i livelli di istruzione.<span className='font-display text-8xl absolute ml-2'>”</span></div>
           </div>}
-          right={<div className='sm:mt-20 text-left'>
+          right={<div className='sm:mt-12 text-left mt-4'>
             <h1 className='font-display text-3xl mb-4'>Un punto di partenza</h1>
             <p className='mb-2'>Il quadro che abbiamo esplorato in questa prima introduzione ci ha restituito la fotografia di un Paese in cui il divario di genere nello studio delle materie scientifiche è ancora forte e sentito.</p>
             <p className='mb-2'>Nonostante questo, il tema sembra essere entrato ormai di fatto nelle agende politiche italiane, tanto che il PNRR, una delle misure più importanti e fondamentali per il futuro del Paese, ha individuato proprio nel potenziamento dell'accesso delle ragazze allo studio delle STEM uno dei suoi asset principali in tema di parità di genere.</p>
-            <p>Attraverso il progetto di analisi Agata, andremo ad approfondire la sezione del Piano dedicata a questi topic, cercando di capire quanti fondi sono stati effettivamente messi a disposizione, a copertura di quali aree e con quale efficacia.</p>
+            <p>Attraverso il progetto di analisi Agata, andremo ad approfondire la sezione del Piano dedicata a questi topic, cercando di capire quanti fondi sono stati effettivamente messi a disposizione, a copertura di quali aree e con <br className='hidden sm:block'/>quale efficacia.</p>
           </div>}
         />
 
@@ -216,7 +217,7 @@ export default function Home() {
 
         <TwoColumnsReverse
           id="i-fondi-del-pnrr"
-          left={<div className='text-left sm:mt-20'>
+          left={<div className='text-left sm:mt-28'>
             <div className='text-5xl mb-4'>I fondi del PNRR</div>
             <p className='mb-2'>I fondi del PNRR destinati alle misure per la parità di genere in Italia valgono 38,5 miliardi di euro. Tuttavia di questa cifra, la stragrande maggioranza confluisce in risorse ed iniziative indirette, ossia misure che hanno obiettivi più ampi ed articolati e che avranno un effetto positivo, ma solo potenziale e collaterale sulla condizione delle donne in Italia.</p>
             <p>Ad esempio i fondi a supporto delle ragazze nello studio delle materie STEM rientrano in un più generico “sostegno per favorire l'accesso di tutti all'università”.</p>
@@ -305,12 +306,12 @@ export default function Home() {
           />
 
         <TwoColumnsReverse
-          left={<div className='text-left'>
+          left={<div className='text-left sm:mt-6'>
           <h2 className='font-display text-3xl mb-4'>Se non sai come farlo, fai un corso!</h2>
           <p className='mb-2'>Saranno erogati dei corsi a tutti gli studenti delle scuole superiori, a partire dal terzo anno, per sostenerli nella scelta dell'istruzione terziaria, favorendo un miglior adattamento tra preparazione e percorso professionale, e aiutando gli studenti ad orientarsi nella transizione scuola-università.</p>
           <p className='mb-2'>L'obiettivo è che almeno 1.000.000 di studenti negli ultimi due anni del liceo abbiano frequentato corsi di transizione scuola-università.*</p>
           <p className='italic'>(Obiettivo per giugno 2026, ma il progetto è ancora da avviare.)</p>
-          <p className='mt-20 text-sm'>*Si tratta di una stima media degli studenti italiani iscritti al 3°, 4° e 5° anno delle superiori durante gli anni di investimento. Il numero di studenti iscritti all'Orientamento Attivo sarà monitorato dal MUR.
+          <p className='mt-20 text-sm hidden sm:block'>*Si tratta di una stima media degli studenti italiani iscritti al 3°, 4° e 5° anno delle superiori durante gli anni di investimento. Il numero di studenti iscritti all'Orientamento Attivo sarà monitorato dal MUR.
 L'investimento è collegato con la Riforma 1.4 della stessa missione e componente che riguarda proprio il sistema di orientamento degli studenti che mira all'introduzione di moduli nelle scuole di almeno 30 ore all'anno.</p>
         </div>}
             right={<div className='text-left'>
@@ -322,6 +323,8 @@ L'investimento è collegato con la Riforma 1.4 della stessa missione e component
               <img style={{ width: '100px', height: '100px', margin: '0px auto'}} src='/icona2.png' />
             </div>
             <p className='ml-16 mr-16 mt-8'>La sostenibilità si ottiene estendendo la formazione ai docenti delle scuole superiori in modo che, a seguito di questo programma triennale, sia disponibile un orientamento con il personale interno delle scuole superiori.</p>
+            <p className='mt-8 text-sm block sm:hidden'>*Si tratta di una stima media degli studenti italiani iscritti al 3°, 4° e 5° anno delle superiori durante gli anni di investimento. Il numero di studenti iscritti all'Orientamento Attivo sarà monitorato dal MUR.
+L'investimento è collegato con la Riforma 1.4 della stessa missione e componente che riguarda proprio il sistema di orientamento degli studenti che mira all'introduzione di moduli nelle scuole di almeno 30 ore all'anno.</p>
           </div>}
           />
 

@@ -29,6 +29,23 @@ const SmallPie = ({ data, stat, subtitle, isReverse = false }) => {
                 ]
             }}
             colors={[foreground, background]}
+            tooltip={(e) => {
+                return <div style={{
+                    backgroundColor: foreground,
+                    padding: "9px 12px",
+                    border: "1px solid #ccc",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    color: isReverse ? 'white' : background,
+                }}>
+                    {e.datum.label}:{" "}
+                    {e.datum.value
+                        ? e.datum.value
+                        : "No data"}
+                </div>
+            }}
             legends={[
                 {
                     anchor: 'bottom',

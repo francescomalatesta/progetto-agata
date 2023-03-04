@@ -1,11 +1,16 @@
 import { Container } from '@/components/Container'
 
-export function TwoColumnsReverse({ id, left, right }) {
+export function TwoColumnsReverse({ id, left, right, py }) {
+  let paddingY = 'py-16'
+  if(py) {
+    paddingY = py
+  }
+
   return (
     <section
       id={id}
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-backgroundReverse text-foregroundReverse py-16"
+      className={`relative overflow-hidden bg-backgroundReverse text-foregroundReverse ${paddingY}`}
     >
       <Container className="relative">
       <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
